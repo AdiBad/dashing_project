@@ -6,9 +6,6 @@ import dash_html_components as html
 #FOR AUTH
 import dash_auth
 
-#FOR CALLBACKS
-from dash.dependencies import Input, Output, State
-
 # Password protection
 VALID_USERNAME_PASSWORD = {
     'eater': 'apples'
@@ -23,6 +20,6 @@ auth = dash_auth.BasicAuth(
 # Set app layout
 app.layout = html.Div("Success!")
 
-# run app
+# Run app
 if __name__ == '__main__':
 	app.run_server(debug=True,port=8051)
